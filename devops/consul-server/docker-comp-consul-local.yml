@@ -1,0 +1,44 @@
+version: '3.7'
+
+services:
+  
+  consul-server:
+    image: hashicorp/consul:1.10.0
+    container_name: consul-server
+    hostname: localhost
+    network_mode: default
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    volumes:
+     - ./consul/server.json:/consul/config/server.json:ro
+    ports:
+      - "8500:8500"
+      - "8600:8600/tcp"
+      - "8600:8600/udp"
+    environment:
+      - VIRTUAL_HOST=host.docker.internal
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: "agent"
+
+  consul-client:
+    image: hashicorp/consul:1.10.0
+    container_name: consul-client
+    hostname: localhost
+    network_mode: default
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    volumes:
+     - ./consul/client.json:/consul/config/client.json:ro
+    command: "agent"
+    environment:
+      - VIRTUAL_HOST=host.docker.internal
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+networks:
+  default:
+    external: true

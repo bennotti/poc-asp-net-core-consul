@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleProject.Api", "SampleProject.Api\SampleProject.Api.csproj", "{F6375B79-B110-4CD8-A7BE-C85A6A273B19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleProject", "SampleProject\SampleProject.csproj", "{72A17F12-DBF8-43BE-9CA2-4A3903A32497}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0012B741-2E5D-48B1-BC13-41E1C1BAFFD1}"
+	ProjectSection(SolutionItems) = preProject
+		..\devops\consul-server\consul\client.json = ..\devops\consul-server\consul\client.json
+		..\devops\consul-server\docker-comp-consul-local.yml = ..\devops\consul-server\docker-comp-consul-local.yml
+		..\Readme.md = ..\Readme.md
+		..\devops\consul-server\run-consul.ps1 = ..\devops\consul-server\run-consul.ps1
+		..\devops\consul-server\consul\server.json = ..\devops\consul-server\consul\server.json
+		..\devops\consul-server\stop-consul.ps1 = ..\devops\consul-server\stop-consul.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Local|Any CPU = Local|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6375B79-B110-4CD8-A7BE-C85A6A273B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6375B79-B110-4CD8-A7BE-C85A6A273B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6375B79-B110-4CD8-A7BE-C85A6A273B19}.Local|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6375B79-B110-4CD8-A7BE-C85A6A273B19}.Local|Any CPU.Build.0 = Debug|Any CPU
+		{F6375B79-B110-4CD8-A7BE-C85A6A273B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6375B79-B110-4CD8-A7BE-C85A6A273B19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72A17F12-DBF8-43BE-9CA2-4A3903A32497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A17F12-DBF8-43BE-9CA2-4A3903A32497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A17F12-DBF8-43BE-9CA2-4A3903A32497}.Local|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A17F12-DBF8-43BE-9CA2-4A3903A32497}.Local|Any CPU.Build.0 = Debug|Any CPU
+		{72A17F12-DBF8-43BE-9CA2-4A3903A32497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A17F12-DBF8-43BE-9CA2-4A3903A32497}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44B35ACC-FAE5-4DCF-AF47-BD2228428BF4}
+	EndGlobalSection
+EndGlobal
